@@ -1,538 +1,614 @@
-
 <!doctype html>
 <html lang="en">
 
 <head>
 
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="author" >	
-		<meta name="description">
-		<meta name="keywords" content="Responsive, HTML5">	
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="google-site-verification" content="6BohGuDJ4HF4THU73lLygLSx3EzeFGzUwaGUVF4DD6c" />
-				
-  		<!-- SITE TITLE -->
-		<title>Owujupe - Bringing Goodness By Empowering Individuals & Communities</title>
-							
-		<!-- FAVICON AND TOUCH ICONS -->
-		<!-- <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
-		<link rel="apple-touch-icon" sizes="152x152" href="">
-		<link rel="apple-touch-icon" sizes="120x120" href="">
-		<link rel="apple-touch-icon" sizes="76x76" href="i">
-		<link rel="apple-touch-icon" href="">
-		<link rel="icon" href="" type="image/x-icon"> -->
-		
-		<link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
-		
-		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-		<!-- GOOGLE FONTS -->
-		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
-		
-		<!-- BOOTSTRAP CSS -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-				
-		<!-- FONT ICONS -->
-		<link href="css/flaticon.css" rel="stylesheet">
-
-		<!-- PLUGINS STYLESHEET -->
-		<link href="css/menu.css" rel="stylesheet">	
-		<link id="effect" href="css/dropdown-effects/fade-down.css" media="all" rel="stylesheet">
-		<link href="css/magnific-popup.css" rel="stylesheet">	
-		<link href="css/owl.carousel.min.css" rel="stylesheet">
-		<link href="css/owl.theme.default.min.css" rel="stylesheet">
-		<link href="css/lunar.css" rel="stylesheet">
-
-		<!-- ON SCROLL ANIMATION -->
-		<link href="css/animate.css" rel="stylesheet">
-
-		<!-- TEMPLATE CSS -->
-		<link href="css/pink-theme.css" rel="stylesheet">
-
-		<!-- Style Switcher CSS -->	
-		<link href="css/blue-theme.css" rel="alternate stylesheet" title="blue-theme">	
-		<link href="css/crocus-theme.css" rel="alternate stylesheet" title="crocus-theme">	
-		<link href="css/green-theme.css" rel="alternate stylesheet" title="green-theme">
-		<link href="css/magenta-theme.css" rel="alternate stylesheet" title="magenta-theme">
-		<link href="css/purple-theme.css" rel="alternate stylesheet" title="purple-theme">
-		<link href="css/skyblue-theme.css" rel="alternate stylesheet" title="skyblue-theme">	
-		<link href="css/red-theme.css" rel="alternate stylesheet" title="red-theme">	
-		<link href="css/violet-theme.css" rel="alternate stylesheet" title="violet-theme">	
-		
-		<!-- RESPONSIVE CSS -->
-		<link href="css/responsive.css" rel="stylesheet">
-		
-		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-		
-		<!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-TMZ6LFTJB2"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
-          gtag('config', 'G-TMZ6LFTJB2');
-        </script>
-
-	</head>
-
-
-
-
-	<body> 
-
-
-
-
-		<!-- PRELOADER SPINNER
-		============================================= -->	
-		<div id="loading" class="loading--theme">
-			<div id="loading-center"><span class="loader"></span></div>
-		</div>
-
-
-
-
-		<!-- STYLE SWITCHER
-		============================================= -->
-		<div id="stlChanger">
-			<div class="blockChanger bgChanger">
-            	<a href="#" class="chBut icon-xs"><span class="flaticon-control-panel"></span></a>
-                <div class="chBody white-color">	
-
-                	<div class="stBlock text-center" style="margin: 30px 20px 20px 26px;">				
-						<div class="stBgs">	
-							<p class="switch"></p>
-
-							<p class="color--white">Color Scheme</p>						
-							<a href="javascript:chooseStyle('blue-theme', 60)"><img src="images/color-scheme/blue.jpg" alt=""></a>
-							<a href="javascript:chooseStyle('red-theme', 60)"><img src="images/color-scheme/red.jpg" alt=""></a>
-							<a href="javascript:chooseStyle('purple-theme', 60)"><img src="images/color-scheme/purple.jpg" alt=""></a>
-							<a href="javascript:chooseStyle('violet-theme', 60)"><img src="images/color-scheme/violet.jpg" alt=""></a>	
-							<a href="javascript:chooseStyle('skyblue-theme', 60)"><img src="images/color-scheme/skyblue.jpg" alt=""></a>
-							<a href="javascript:chooseStyle('magenta-theme', 60)"><img src="images/color-scheme/magenta.jpg" alt=""></a>
-							<a href="javascript:chooseStyle('crocus-theme', 60)"><img src="images/color-scheme/crocus.jpg" alt=""></a>
-							<a href="javascript:chooseStyle('green-theme', 60)"><img src="images/color-scheme/green.jpg" alt=""></a>
-							
-						</div>
-					</div>
-
-					<div class="stBlock text-center" style="margin: 0px 27px 25px 31px;">
-						<a class="btn r-04 btn--theme hover--theme" href="javascript:chooseStyle('none', 60)">Reset Color</a>
-					</div>
-
-				</div>
-			</div>
-		</div>	  <!-- END SWITCHER -->
-
-
-
-
-		<!-- PAGE CONTENT
-		============================================= -->	
-		<div id="page" class="page font--jakarta">
-
-
-
-
-			<!-- HEADER
-			============================================= -->
-			<header id="header" class="tra-menu navbar-light white-scroll">
-				<div class="header-wrapper">
-
-
-					<!-- MOBILE HEADER -->
-				    <div class="wsmobileheader clearfix">	  	
-				    	<span class="smllogo"><img src="owublack.png" alt="mobile-logo"></span>
-				    	<a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>	
-				 	</div>
-
-
-				 	<!-- NAVIGATION MENU -->
-				  	<div class="wsmainfull menu clearfix">
-	    				<div class="wsmainwp clearfix">
-
-
-	    					<!-- HEADER BLACK LOGO -->
-	    					<div class="desktoplogo">
-	    						<a href="#hero-1" class="logo-black">
-	    							<img class="light-theme-img" src="owublack.png" alt="logo">
-	    							<img class="dark-theme-img" src="image-removebg-preview.png" alt="logo">
-	    						</a>
-	    					</div>
-
-	    					<!-- HEADER WHITE LOGO -->
-	    					<div class="desktoplogo">
-	    						<a href="#hero-1" class="logo-white"><img src="image-removebg-preview.png" alt="logo"></a>
-	    					</div>
-
-
-	    					<!-- MAIN MENU -->
-	      					<nav class="wsmenu clearfix">
-	        					<ul class="wsmenu-list nav-theme">
-
-
-	        						<!-- DROPDOWN SUB MENU -->
-						          	<!-- <li aria-haspopup="true"><a href="#" class="h-link">About </a> -->
-	            						<!-- <ul class="sub-menu">
-	            							<li aria-haspopup="true"><a href="#lnk-1">Why Owujupe?</a></li>
-	            							<li aria-haspopup="true"><a href="#lnk-2">Integrations</a></li>
-	            							<li aria-haspopup="true"><a href="#lnk-3">How It Works</a></li>
-	            							<li aria-haspopup="true"><a href="#features-2">Best Solutions</a></li>
-	            							<li aria-haspopup="true"><a href="#reviews-1">Testimonials</a></li>	
-						           		</ul> -->
-								    </li>
-
-
-								    <!-- SIMPLE NAVIGATION LINK -->
-							    	<!-- <li class="nl-simple" aria-haspopup="true"><a href="#features-6" class="h-link">Features</a></li> -->
-
-
-								    <!-- MEGAMENU -->
-						          	
-
-							    	 <li class="nl-simple" aria-haspopup="true"><a href="https://owujupe.com" class="h-link">Home</a></li> 
-
-								    
-							    	 <li class="nl-simple" aria-haspopup="true"><a href="blog.html" class="h-link">News</a></li> 
-
-
-						          	<!-- SIMPLE NAVIGATION LINK -->
-
-
-							    	<!-- SIGN IN LINK -->
-							    <li class="nl-simple reg-fst-link mobile-last-link" aria-haspopup="true">
-							    	<a href="login.html" class="h-link">Sign in</a>
-							    </li>
-
-
-								    <!-- SIGN UP BUTTON -->
-								    <li class="nl-simple" aria-haspopup="true">
-								    	<a href="https://calendly.com/godfreyejonas/30min" class="btn r-04 btn--theme hover--tra-white last-link">Schedule a Call</a>
-								    </li> 
-
-
-	        					</ul>
-	        				</nav>	<!-- END MAIN MENU -->
-
-
-	    				</div>
-	    			</div>	<!-- END NAVIGATION MENU -->
-
-
-				</div>     <!-- End header-wrapper -->
-			</header>	<!-- END HEADER -->
-
-
-
-
-			<!-- PROJECTS-1
-			============================================= -->
-			<section id="projects-1" class="inner-page-hero projects-section">
-				<div class="container">
-
-
-					<!-- SECTION TITLE -->	
-					<div class="row justify-content-center">	
-						<div class="col-md-10 col-lg-9">
-							<div class="section-title mb-80">	
-
-								<!-- Title -->	
-								<h2 class="s-52 w-700">Community Events</h2>	
-
-								<!-- Text -->	
-								<p class="s-21 color--grey">Our Commitment transcends transactions</p>
-								
-							</div>	
-						</div>
-					</div>
-
-
-					<!-- PROJECTS WRAPPER -->
-					<div class="projects-wrapper">
-						<div class="row align-items-center row-cols-1 row-cols-md-2">
-
-							<!-- PROJECT #2 -->
-							<div class="col">
-		 						<div id="pt-1-2" class="project-details">
-
-		 							<!-- Title -->
-		 							<h5 class="s-24">Community Hangouts</h5>
-
-		 							<!-- Image -->
-					 				<div class="project-preview r-10">
-
-					 					<!-- Project Preview -->
-						 				<div class="hover-overlay"> 
-											<img class="img-fluid" src="announcement.png" alt="project-preview">
-											<div class="item-overlay"></div>
-										</div>
-
-										<!-- Project Link -->
-										<div class="project-link ico-35 color--white">
-											<a href="project-details.html" title=""><span class="flaticon-visibility"></span></a>
-										</div>
-
-									</div>
-
-								</div>
-							</div>	<!-- END PROJECT #2 -->
-							
-								<!-- PROJECT #1 -->
-							<div class="col">
-		 						<div id="pt-1-1" class="project-details">
-
-		 							<!-- Title -->
-		 							<h5 class="s-24">Emerging Tech Talks</h5>
-
-		 							<!-- Image -->
-					 				<div class="project-preview r-10">
-
-					 					<!-- Project Preview -->
-						 				<div class="hover-overlay"> 
-											<img class="img-fluid" src="blkjd.jpg" alt="project-preview">
-											<div class="item-overlay"></div>
-										</div>
-
-										<!-- Project Link -->
-										<div class="project-link ico-35 color--white">
-											<a href="project-details.html" title=""><span class="flaticon-visibility"></span></a>
-										</div>
-
-									</div>
-
-								</div>
-							</div>	<!-- END PROJECT #1 -->
-
-
-							
-
-						</div>
-					</div>	<!-- END PROJECTS WRAPPER -->
-
-
-				</div>	   <!-- End container -->	
-			</section>	<!-- END PROJECTS-1 -->
-
-
-        
-        	<!-- CONTACTS-1
-			============================================= -->
-			<section id="contacts-1" class="pb-50 inner-page-hero contacts-section division">				
-				<div class="container">
-
-
-					<!-- SECTION TITLE -->	
-					<div class="row justify-content-center">	
-						<div class="col-md-10 col-lg-9">
-							<div class="section-title text-center mb-80">	
-
-								<!-- Title -->	
-								<h2 class="s-52 w-700">Admission is Free</h2>	
-
-								<!-- Text -->	
-								<p class="p-lg">Register to participate for our forthcoming events
-								</p>
-									
-							</div>	
-						</div>
-					</div>
-
-
-					<!-- CONTACT FORM -->
-				 	<div class="row justify-content-center">	
-				 		<div class="col-md-11 col-lg-10 col-xl-8">
-				 			<div class="form-holder">
-								<form name="contactform" class="row contact-form" action="com.php" method="post">
-        <!-- Form Select -->
-        <div class="col-md-12 input-subject">
-            <p class="p-lg">What event do you want to attend? </p>
-            <select class="form-select subject" name="event" aria-label="Default select example" required>
-                <option value="" selected>Kindly choose</option>
-                <option value="Community Hangout">Community Hangout</option>
-                <option value="Emerging Tech Talks">Emerging Tech Talks</option>
-            </select>
-        </div>
-        
-        <!-- Contact Form Input -->
-        <div class="col-md-12">
-            <p class="p-lg">Your Name: </p>
-            <span>Please enter your real name: </span>
-            <input type="text" name="name" class="form-control name" placeholder="Your Name*" required> 
-        </div>
-        
-        <div class="col-md-12">
-            <p class="p-lg">Your Email Address: </p>
-            <span>Please carefully check your email address for accuracy</span>
-            <input type="email" name="email" class="form-control email" placeholder="Email Address*" required> 
-        </div>
-        
-        <div class="col-md-12">
-            <p class="p-lg">What do you expect to achieve: </p>
-            <span>Type here</span>
-            <textarea class="form-control message" name="message" rows="6" placeholder="I hope to achieve..."></textarea>
-        </div>
-        
-        <!-- Contact Form Button -->
-        <div class="col-md-12 mt-15 form-btn text-right">    
-            <button type="submit" name="submit" class="btn btn--theme hover--theme submit">Register</button>    
-        </div>
-        
-        <!-- Contact Form Message -->
-        <div class="col-lg-12 contact-form-msg">
-            <span class="loading"></span>
-        </div>    
-    </form> 
-    
-    
-    	<script>
-        // Check if the URL contains the status parameter
-        const urlParams = new URLSearchParams(window.location.search);
-        if (urlParams.has('status') && urlParams.get('status') === 'success') {
-            Swal.fire({
-                title: 'Success!',
-                text: 'Thank you for your registration. A confirmation email has been sent.',
-                icon: 'success',
-                confirmButtonText: 'OK'
-            });
-        }
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author">
+    <meta name="description">
+    <meta name="keywords" content="Responsive, HTML5">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="6BohGuDJ4HF4THU73lLygLSx3EzeFGzUwaGUVF4DD6c" />
+
+    <!-- SITE TITLE -->
+    <title>Owujupe - Bringing Goodness By Empowering Individuals & Communities</title>
+
+    <!-- FAVICON AND TOUCH ICONS -->
+    <!-- <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="152x152" href="">
+        <link rel="apple-touch-icon" sizes="120x120" href="">
+        <link rel="apple-touch-icon" sizes="76x76" href="i">
+        <link rel="apple-touch-icon" href="">
+        <link rel="icon" href="" type="image/x-icon"> -->
+
+    <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FONT ICONS -->
+    <link href="css/flaticon.css" rel="stylesheet">
+
+    <!-- PLUGINS STYLESHEET -->
+    <link href="css/menu.css" rel="stylesheet">
+    <link id="effect" href="css/dropdown-effects/fade-down.css" media="all" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/owl.theme.default.min.css" rel="stylesheet">
+    <link href="css/lunar.css" rel="stylesheet">
+
+    <!-- ON SCROLL ANIMATION -->
+    <link href="css/animate.css" rel="stylesheet">
+
+    <!-- TEMPLATE CSS -->
+    <link href="css/pink-theme.css" rel="stylesheet">
+
+    <!-- Style Switcher CSS -->
+    <link href="css/blue-theme.css" rel="alternate stylesheet" title="blue-theme">
+    <link href="css/crocus-theme.css" rel="alternate stylesheet" title="crocus-theme">
+    <link href="css/green-theme.css" rel="alternate stylesheet" title="green-theme">
+    <link href="css/magenta-theme.css" rel="alternate stylesheet" title="magenta-theme">
+    <link href="css/purple-theme.css" rel="alternate stylesheet" title="purple-theme">
+    <link href="css/skyblue-theme.css" rel="alternate stylesheet" title="skyblue-theme">
+    <link href="css/red-theme.css" rel="alternate stylesheet" title="red-theme">
+    <link href="css/violet-theme.css" rel="alternate stylesheet" title="violet-theme">
+
+    <!-- RESPONSIVE CSS -->
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TMZ6LFTJB2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-TMZ6LFTJB2');
     </script>
-				 			</div>	
-				 		</div>	
-				 	</div>	   <!-- END CONTACT FORM -->
 
-
-				</div>	   <!-- End container -->	
-			</section>	<!-- END CONTACTS-1 -->
-
-		
-
-
-		<!-- FOOTER-3
-			============================================= -->
-			<footer id="footer-3" class="pt-100 footer ft-3-ntr">
-				<div class="container">
-
-
-					<!-- FOOTER CONTENT -->
-				
-
-
-					<hr>	<!-- FOOTER DIVIDER LINE -->
-					
+</head>
 
 
 
 
-					<!-- BOTTOM FOOTER -->
-					<div class="bottom-footer">
-						<div class="row row-cols-1 row-cols-md-2 d-flex align-items-center">
-
-
-							<!-- FOOTER COPYRIGHT -->
-							<div class="col">
-								<div class="footer-copyright">
-									<p class="p-sm">&copy; 2024 Owujupe. <span>All Rights Reserved | <a href="/privacypolicy.html">Privacy Policy</a></span></p>
-								</div>
-							</div>
-
-
-							<!-- FOOTER SOCIALS -->
-							<div class="col">
-								<ul class="bottom-footer-socials ico-20 text-end">
-									<li><a href="https://www.linkedin.com/company/owujupe"><span>LinkedIn</span></a></li>
-									<li><a href="https://x.com/owujupe"><span class="flaticon-twitter"></span></a></li>
-									<li><a href="https://instagram.com/owujupe"><span class="flaticon-instagram"></span></a></li>
-
-								</ul>
-							</div>
-
-
-						</div>  <!-- End row -->
-					</div>	<!-- END BOTTOM FOOTER -->
-
-
-				</div>     <!-- End container -->	
-			</footer>   <!-- END FOOTER-3 -->	
+<body>
 
 
 
 
-		</div>	<!-- END PAGE CONTENT -->	
+    <!-- PRELOADER SPINNER
+        ============================================= -->
+    <div id="loading" class="loading--theme">
+        <div id="loading-center"><span class="loader"></span></div>
+    </div>
 
 
 
 
-		<!-- EXTERNAL SCRIPTS
-		============================================= -->	
-		<script src="js/jquery-3.7.0.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>	
-		<script src="js/modernizr.custom.js"></script>
-		<script src="js/jquery.easing.js"></script>
-		<script src="js/jquery.appear.js"></script>
-		<script src="js/menu.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
-		<script src="js/pricing-toggle.js"></script>
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<script src="js/request-form.js"></script>	
-		<script src="js/jquery.validate.min.js"></script>
-		<script src="js/jquery.ajaxchimp.min.js"></script>	
-		<script src="js/popper.min.js"></script>
-		<script src="js/lunar.js"></script>
-		<script src="js/wow.js"></script>
-				
-		<!-- Custom Script -->		
-		<script src="js/custom.js"></script>
+    <!-- STYLE SWITCHER
+        ============================================= -->
+    <div id="stlChanger">
+        <div class="blockChanger bgChanger">
+            <a href="#" class="chBut icon-xs"><span class="flaticon-control-panel"></span></a>
+            <div class="chBody white-color">
 
-		<script>
-			$(document).on({
-			    "contextmenu": function (e) {
-			        console.log("ctx menu button:", e.which); 
+                <div class="stBlock text-center" style="margin: 30px 20px 20px 26px;">
+                    <div class="stBgs">
+                        <p class="switch"></p>
 
-			        // Stop the context menu
-			        e.preventDefault();
-			    },
-			    "mousedown": function(e) { 
-			        console.log("normal mouse down:", e.which); 
-			    },
-			    "mouseup": function(e) { 
-			        console.log("normal mouse up:", e.which); 
-			    }
-			});
-		</script>
+                        <p class="color--white">Color Scheme</p>
+                        <a href="javascript:chooseStyle('blue-theme', 60)"><img src="images/color-scheme/blue.jpg"
+                                alt=""></a>
+                        <a href="javascript:chooseStyle('red-theme', 60)"><img src="images/color-scheme/red.jpg"
+                                alt=""></a>
+                        <a href="javascript:chooseStyle('purple-theme', 60)"><img src="images/color-scheme/purple.jpg"
+                                alt=""></a>
+                        <a href="javascript:chooseStyle('violet-theme', 60)"><img src="images/color-scheme/violet.jpg"
+                                alt=""></a>
+                        <a href="javascript:chooseStyle('skyblue-theme', 60)"><img src="images/color-scheme/skyblue.jpg"
+                                alt=""></a>
+                        <a href="javascript:chooseStyle('magenta-theme', 60)"><img src="images/color-scheme/magenta.jpg"
+                                alt=""></a>
+                        <a href="javascript:chooseStyle('crocus-theme', 60)"><img src="images/color-scheme/crocus.jpg"
+                                alt=""></a>
+                        <a href="javascript:chooseStyle('green-theme', 60)"><img src="images/color-scheme/green.jpg"
+                                alt=""></a>
 
-		<script>
-			$(function() {
-			  $(".switch").click(function() {
-			    $("body").toggleClass("theme--dark");
-				    if( $( "body" ).hasClass( "theme--dark" )) {
-	                	$( ".switch" ).text( "Light Mode" );
-	            	} else {
-	                	$( ".switch" ).text( "Dark Mode" );
-	            	}
-			    });
-			});
-		</script>
+                    </div>
+                </div>
 
-		<script>
-			$(document).ready(function() {
-	            if( $( "body" ).hasClass( "theme--dark" )) {
-	                $( ".switch" ).text( "Light Mode" );
-	            } else {
-	                $( ".switch" ).text( "Dark Mode" );
-	            }
-	        });
-		</script>
+                <div class="stBlock text-center" style="margin: 0px 27px 25px 31px;">
+                    <a class="btn r-04 btn--theme hover--theme" href="javascript:chooseStyle('none', 60)">Reset
+                        Color</a>
+                </div>
+
+            </div>
+        </div>
+    </div> <!-- END SWITCHER -->
 
 
-		<script src="js/changer.js"></script>
-		<script defer src="js/styleswitch.js"></script>	
 
-	</body>
+
+    <!-- PAGE CONTENT
+        ============================================= -->
+    <div id="page" class="page font--jakarta">
+
+
+
+
+        <!-- HEADER
+            ============================================= -->
+        <header id="header" class="tra-menu navbar-light white-scroll">
+            <div class="header-wrapper">
+
+
+                <!-- MOBILE HEADER -->
+                <div class="wsmobileheader clearfix">
+                    <span class="smllogo"><img src="owublack.png" alt="mobile-logo"></span>
+                    <a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
+                </div>
+
+
+                <!-- NAVIGATION MENU -->
+                <div class="wsmainfull menu clearfix">
+                    <div class="wsmainwp clearfix">
+
+
+                        <!-- HEADER BLACK LOGO -->
+                        <div class="desktoplogo">
+                            <a href="#hero-1" class="logo-black">
+                                <img class="light-theme-img" src="owublack.png" alt="logo">
+                                <img class="dark-theme-img" src="image-removebg-preview.png" alt="logo">
+                            </a>
+                        </div>
+
+                        <!-- HEADER WHITE LOGO -->
+                        <div class="desktoplogo">
+                            <a href="#hero-1" class="logo-white"><img src="image-removebg-preview.png" alt="logo"></a>
+                        </div>
+
+
+                        <!-- MAIN MENU -->
+                        <nav class="wsmenu clearfix">
+                            <ul class="wsmenu-list nav-theme">
+
+
+                                <!-- DROPDOWN SUB MENU -->
+                                <!-- <li aria-haspopup="true"><a href="#" class="h-link">About </a> -->
+                                <!-- <ul class="sub-menu">
+                                            <li aria-haspopup="true"><a href="#lnk-1">Why Owujupe?</a></li>
+                                            <li aria-haspopup="true"><a href="#lnk-2">Integrations</a></li>
+                                            <li aria-haspopup="true"><a href="#lnk-3">How It Works</a></li>
+                                            <li aria-haspopup="true"><a href="#features-2">Best Solutions</a></li>
+                                            <li aria-haspopup="true"><a href="#reviews-1">Testimonials</a></li> 
+                                        </ul> -->
+                                </li>
+
+
+                                <!-- SIMPLE NAVIGATION LINK -->
+                                <!-- <li class="nl-simple" aria-haspopup="true"><a href="#features-6" class="h-link">Features</a></li> -->
+
+
+                                <!-- MEGAMENU -->
+
+
+                                <li class="nl-simple" aria-haspopup="true"><a href="https://owujupe.com"
+                                        class="h-link">Home</a></li>
+
+
+                                <li class="nl-simple" aria-haspopup="true"><a href="blog.html" class="h-link">News</a>
+                                </li>
+
+
+                                <!-- SIMPLE NAVIGATION LINK -->
+
+
+                                <!-- SIGN IN LINK -->
+                                <li class="nl-simple reg-fst-link mobile-last-link" aria-haspopup="true">
+                                    <a href="login.html" class="h-link">Sign in</a>
+                                </li>
+
+
+                                <!-- SIGN UP BUTTON -->
+                                <li class="nl-simple" aria-haspopup="true">
+                                    <a href="https://calendly.com/godfreyejonas/30min"
+                                        class="btn r-04 btn--theme hover--tra-white last-link">Schedule a Call</a>
+                                </li>
+
+
+                            </ul>
+                        </nav> <!-- END MAIN MENU -->
+
+
+                    </div>
+                </div> <!-- END NAVIGATION MENU -->
+
+
+            </div> <!-- End header-wrapper -->
+        </header> <!-- END HEADER -->
+
+
+
+
+        <!-- PROJECTS-1
+            ============================================= -->
+        <section id="projects-1" class="inner-page-hero projects-section">
+            <div class="container">
+
+
+                <!-- SECTION TITLE -->
+                <div class="row justify-content-center">
+                    <div class="col-md-10 col-lg-9">
+                        <div class="section-title mb-80">
+
+                            <!-- Title -->
+                            <h2 class="s-52 w-700">Community Events</h2>
+
+                            <!-- Text -->
+                            <p class="s-21 color--grey">Our Commitment transcends transactions</p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- PROJECTS WRAPPER -->
+                <div class="projects-wrapper">
+                    <!-- pink-theme.css -->
+                    <div class="row align-items-center row-cols-1 row-cols-md-2">
+
+                        <!-- PROJECT #2 -->
+                        <div class="col">
+                            <div id="pt-1-2" class="project-details">
+
+                                <!-- Title -->
+                                <h5 class="s-24">Community Hangouts</h5>
+
+                                <!-- Image -->
+                                <div class="project-preview r-10">
+
+                                    <!-- Project Preview -->
+                                    <div class="hover-overlay">
+                                        <img class="img-fluid" src="announcement.png" alt="project-preview">
+                                        <div class="item-overlay"></div>
+                                    </div>
+
+                                    <!-- Project Link -->
+                                    <div class="project-link ico-35 color--white">
+                                        <a href="project-details.html" title=""><span
+                                                class="flaticon-visibility"></span></a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div> <!-- END PROJECT #2 -->
+
+                        <!-- PROJECT #1 -->
+                        <div class="col">
+                            <div id="pt-1-1" class="project-details">
+
+                                <!-- Title -->
+                                <h5 class="s-24">Emerging Tech Talks</h5>
+
+                                <!-- Image -->
+                                <div class="project-preview r-10">
+
+                                    <!-- Project Preview -->
+                                    <div class="hover-overlay">
+                                        <img class="img-fluid" src="hangout.jpg" alt="project-preview">
+                                        <div class="item-overlay"></div>
+                                    </div>
+
+                                    <!-- Project Link -->
+                                    <div class="project-link ico-35 color--white">
+                                        <a href="project-details.html" title=""><span
+                                                class="flaticon-visibility"></span></a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div> <!-- END PROJECT #1 -->
+
+
+
+
+                    </div>
+                </div> <!-- END PROJECTS WRAPPER -->
+
+
+            </div> <!-- End container -->
+        </section> <!-- END PROJECTS-1 -->
+
+        <!-- VIDEO START -->
+        <section><video src="#"></video></section>
+        <!-- VIDEO END -->
+
+        <!-- HANGOUT POLICIES START -->
+        <!-- Title -->
+        <h2 class="s-52 w-700" style="text-align: center;">Hangout Policies</h2>
+        <section class="hangout_policies" style="margin-top:2rem;">
+            <div class="hangout_policies_img">
+                <img src="./Previous/1.png" alt="">
+            </div>
+            <div class="hangout_policies_img">
+                <img src="./Previous/2.png" alt="">
+            </div>
+            <div class="hangout_policies_img">
+                <img src="./Previous/Comms Hangout.png" alt="">
+            </div>
+        </section>
+        <!-- HANGOUT POLICIES END -->
+
+        <!-- PUBLIC REVIEWS START -->
+        <h2 class="s-52 w-700" style="text-align: center;margin-top: 4rem;">Reviews</h2>
+        <section class="public_reviews">
+            <!-- REVIEW START -->
+            <div class="public_review">
+                <p class="review_text">"The Owujupe community hangout was an amazing experience! We got to meet new
+                    people, share ideas, and
+                    participate in team-building activities. The sense of belonging and collaboration was overwhelming,
+                    and I left with a greater sense of financial empowerment. I can't wait for the next event!"</p>
+                    <h2 style="font-size: 1rem;">Aisha S. (Community Organizer)</h2>
+            </div>
+            <!-- REVIEW END -->
+            <!-- REVIEW START -->
+            <div class="public_review">
+                <p class="review_text">"The Emerging Tech Talks at Owujupe were not only informative but inspiring. It
+                    was great to engage with others passionate about the future of technology and how it intersects with
+                    personal finance. The knowledge I gained will definitely help me make smarter financial and tech
+                    decisions."</p>
+                    <h2 style="font-size: 1rem;">David T. (Tech Enthusiast)</h2>
+            </div>
+            <!-- REVIEW END -->
+            <!-- REVIEW START -->
+            <div class="public_review">
+                <p class="review_text"> "I attended the community hangout with a few friends, and we had an
+                    unforgettable time. The event was well-organized, with plenty of fun activities, and it provided a
+                    fantastic opportunity to network with other members of the community. I especially loved the group
+                    discussions on collaborative financing. Owujupe really knows how to create a welcoming space for
+                    learning and growth!"</p>
+                    <h2 style="font-size: 1rem;">Amaka I. (College Student)</h2>
+            </div>
+            <!-- REVIEW END -->
+        </section>
+        <!-- PUBLIC REVIEWS END -->
+
+        <!-- CONTACTS-1
+            ============================================= -->
+        <section id="contacts-1" class="pb-50 inner-page-hero contacts-section division">
+            <div class="container">
+
+
+                <!-- SECTION TITLE -->
+                <div class="row justify-content-center">
+                    <div class="col-md-10 col-lg-9">
+                        <div class="section-title text-center mb-80">
+
+                            <!-- Title -->
+                            <h2 class="s-52 w-700">Admission is Free</h2>
+
+                            <!-- Text -->
+                            <p class="p-lg">Register to participate for our forthcoming events
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CONTACT FORM -->
+                <div class="row justify-content-center">
+                    <div class="col-md-11 col-lg-10 col-xl-8">
+                        <div class="form-holder">
+                            <form name="contactform" class="row contact-form" action="com.php" method="post">
+                                <!-- Form Select -->
+                                <div class="col-md-12 input-subject">
+                                    <p class="p-lg">What event do you want to attend? </p>
+                                    <select class="form-select subject" name="event" aria-label="Default select example"
+                                        required>
+                                        <option value="" selected>Kindly choose</option>
+                                        <option value="Community Hangout">Community Hangout</option>
+                                        <option value="Emerging Tech Talks">Emerging Tech Talks</option>
+                                    </select>
+                                </div>
+
+                                <!-- Contact Form Input -->
+                                <div class="col-md-12">
+                                    <p class="p-lg">Your Name: </p>
+                                    <span>Please enter your real name: </span>
+                                    <input type="text" name="name" class="form-control name" placeholder="Your Name*"
+                                        required>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <p class="p-lg">Your Email Address: </p>
+                                    <span>Please carefully check your email address for accuracy</span>
+                                    <input type="email" name="email" class="form-control email"
+                                        placeholder="Email Address*" required>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <p class="p-lg">What do you expect to achieve: </p>
+                                    <span>Type here</span>
+                                    <textarea class="form-control message" name="message" rows="6"
+                                        placeholder="I hope to achieve..."></textarea>
+                                </div>
+
+                                <!-- Contact Form Button -->
+                                <div class="col-md-12 mt-15 form-btn text-right">
+                                    <button type="submit" name="submit"
+                                        class="btn btn--theme hover--theme submit">Register</button>
+                                </div>
+
+                                <!-- Contact Form Message -->
+                                <div class="col-lg-12 contact-form-msg">
+                                    <span class="loading"></span>
+                                </div>
+                            </form>
+
+
+                            <script>
+                                // Check if the URL contains the status parameter
+                                const urlParams = new URLSearchParams(window.location.search);
+                                if (urlParams.has('status') && urlParams.get('status') === 'success') {
+                                    Swal.fire({
+                                        title: 'Success!',
+                                        text: 'Thank you for your registration. A confirmation email has been sent.',
+                                        icon: 'success',
+                                        confirmButtonText: 'OK'
+                                    });
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </div> <!-- END CONTACT FORM -->
+
+
+            </div> <!-- End container -->
+        </section> <!-- END CONTACTS-1 -->
+
+
+
+
+        <!-- FOOTER-3
+            ============================================= -->
+        <footer id="footer-3" class="pt-100 footer ft-3-ntr">
+            <div class="container">
+
+
+                <!-- FOOTER CONTENT -->
+
+
+
+                <hr> <!-- FOOTER DIVIDER LINE -->
+
+
+
+
+
+                <!-- BOTTOM FOOTER -->
+                <div class="bottom-footer">
+                    <div class="row row-cols-1 row-cols-md-2 d-flex align-items-center">
+
+
+                        <!-- FOOTER COPYRIGHT -->
+                        <div class="col">
+                            <div class="footer-copyright">
+                                <p class="p-sm">&copy; 2024 Owujupe. <span>All Rights Reserved | <a
+                                            href="/privacypolicy.html">Privacy Policy</a></span></p>
+                            </div>
+                        </div>
+
+
+                        <!-- FOOTER SOCIALS -->
+                        <div class="col">
+                            <ul class="bottom-footer-socials ico-20 text-end">
+                                <li><a href="https://www.linkedin.com/company/owujupe"><span>LinkedIn</span></a></li>
+                                <li><a href="https://x.com/owujupe"><span class="flaticon-twitter"></span></a></li>
+                                <li><a href="https://instagram.com/owujupe"><span class="flaticon-instagram"></span></a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+
+                    </div> <!-- End row -->
+                </div> <!-- END BOTTOM FOOTER -->
+
+
+            </div> <!-- End container -->
+        </footer> <!-- END FOOTER-3 -->
+
+
+
+
+    </div> <!-- END PAGE CONTENT -->
+
+
+
+
+    <!-- EXTERNAL SCRIPTS
+        ============================================= -->
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/jquery.easing.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/pricing-toggle.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/request-form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/lunar.js"></script>
+    <script src="js/wow.js"></script>
+
+    <!-- Custom Script -->
+    <script src="js/custom.js"></script>
+
+    <script>
+        $(document).on({
+            "contextmenu": function (e) {
+                console.log("ctx menu button:", e.which);
+
+                // Stop the context menu
+                e.preventDefault();
+            },
+            "mousedown": function (e) {
+                console.log("normal mouse down:", e.which);
+            },
+            "mouseup": function (e) {
+                console.log("normal mouse up:", e.which);
+            }
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $(".switch").click(function () {
+                $("body").toggleClass("theme--dark");
+                if ($("body").hasClass("theme--dark")) {
+                    $(".switch").text("Light Mode");
+                } else {
+                    $(".switch").text("Dark Mode");
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            if ($("body").hasClass("theme--dark")) {
+                $(".switch").text("Light Mode");
+            } else {
+                $(".switch").text("Dark Mode");
+            }
+        });
+    </script>
+
+
+    <script src="js/changer.js"></script>
+    <script defer src="js/styleswitch.js"></script>
+
+</body>
 
 
 

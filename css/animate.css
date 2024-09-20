@@ -1591,3 +1591,42 @@
 .slideOutUp {
   animation-name: slideOutUp;
 }
+
+
+/* =================================================
+HANGOUT POLICIES
+================================================= */
+
+.hangout_policies {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.hangout_policies_img {
+  width: calc(100% / 3.5);
+  height: 25%;
+}
+
+.hangout_policies img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.public_reviews {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 2rem;
+}
+.public_review {
+  padding: 1rem;
+}
